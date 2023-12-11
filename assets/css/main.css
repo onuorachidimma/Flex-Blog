@@ -1,0 +1,724 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'ABeeZee', sans-serif;
+    position: relative;
+}
+
+.modal{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: none;
+    background-color: rgba(158, 148, 158, 0.4);
+}
+
+/* NAV BAR */
+nav{
+    color: white;
+    margin-bottom: 3rem;
+    
+}
+
+.nav-li{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+li{
+    list-style-type: none;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav1{
+    background-color: #122ab2;
+    padding: 10px 0;
+   
+}
+
+.nav2{
+    background-color: #2c70ff;
+    padding: 22px 0;
+}
+
+.options{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    align-items: center;
+}
+
+.options li{
+    font-size: 1.2rem;
+}
+
+.companyName{
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+/* MENU iCON*/
+.menu-icon{
+    display: none;
+}
+
+.menu{
+    font-size: 2rem;
+    color: white;
+}
+
+/* SIDE BAR */
+.side-bar{
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #f7f7f7;
+    width: 50%;
+}
+
+.menu-close{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 2rem;
+    color: #222221;
+    font-size: 2rem;
+}
+
+.sidebar-li{
+    padding: 0 3rem;
+}
+
+.sidebar-li li{
+    color: #222221;
+    font-size: 1.3rem;
+    padding: 1rem;
+    border-bottom: 4px solid white;
+    transition: font-size 0.3s, background-color 0.3s, border-bottom 0.3s, padding 0.3s;
+}
+
+.sidebar-li li:hover{
+    background-color: #c0b2b2;
+    font-size: 1.5rem;
+    border-bottom-color: #978989;
+    padding: 1.2rem;
+}
+
+/* MAIN */
+main{
+    width: 70%;
+    margin: auto;
+    /* margin-bottom: 4rem; */
+}
+
+.novos, .Sobre{
+    font-size: 1.7rem;
+    color: #222221;
+}
+
+.main1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    border-top: 2px solid #080ba4;
+    border-bottom: 2px solid #080ba4;
+    padding: 4rem 1rem;
+    margin-bottom: 2rem;
+}
+
+.sobre{
+    width: 50%;
+}
+
+.sobreImg1{
+    width: 23%;
+    height: 65vh;
+}
+
+.sobreImg2{
+    width: 23%;
+    height: 33vh;
+}
+
+.sobreImg1 img, .sobreImg2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Sobre{
+    font-size: 2.7rem;
+    margin-bottom: 2rem;
+}
+
+.sobre p{
+    margin-bottom: 1.5rem;
+    text-align: justify;
+    font-size: 1.2rem;
+    color: #222221;
+}
+
+/* MAIN2 */
+.productos{
+    padding-top: 2rem;
+    padding-left: 5rem;
+    font-size: 2.7rem;
+    margin-bottom: 2rem;
+}
+
+.main2_images{
+    display: flex;
+    justify-content: space-between;
+}
+
+.purple, .pink, .blue{
+    width: 32.5%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.purple img, .pink img, .blue img{
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.purple img:hover, .pink img:hover, .blue img:hover{
+    transform: scale(1.05);
+}
+
+.purple img{
+    height: 40%;
+}
+
+.pink img{
+    height: 60%;
+}
+
+.blue img{
+    height: 50%;
+}
+
+.color{
+    background-color: #f7f7f7;
+    padding: 4rem 0 4rem 1rem;
+    color: #a5a4a4;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+.colorPurple{
+    border-top: 8px solid #ae83f3;
+}
+
+.colorPink{
+    border-top: 8px solid #fb2a61;
+}
+
+.colorBlue{
+    border-top: 8px solid #66e9db;
+}
+
+/* MAIN TWO */
+.mainTwo{
+    background-color: #f7f7f7;
+    padding: 4rem 0;
+    margin-top: 4rem;
+}
+
+.mainTwo-container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-card{
+    width: 32.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.cobre{
+    text-align: center;
+    color: #a5a4a4;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    border-bottom: 4px solid white;
+    padding-bottom: 10px;
+}
+
+.price1, .price2, .price3{
+    padding: 3rem;
+    border: 4px solid white;
+}
+
+.cobre, .prata, .ouro{
+    padding-top: 1.6rem;
+}
+
+sup{
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.price{
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    color: #1f2021;
+    border-bottom: 4px solid white;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+.mainTwo-li span{
+    display: inline-block;
+    height: 6px;
+    width: 6px;
+    border-radius: 100px;
+    background-color: #2c70ff;
+}
+
+.mainTwo-li li{
+    font-style: italic;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 14px;
+    color: #817e7d;
+    font-weight: bold;
+}
+
+.comprar{
+    border-radius: none;
+    background-color: transparent;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.6rem;
+    border: 3px solid #131116;
+    color: #141b20;
+    padding: 20px 0;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.comprar:hover{
+    background-color: #c4bfbe;
+}
+
+/* DYNAMIC DIV */
+
+.Qualidade{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 5rem;
+}
+
+.dynamic-div{
+    width: 32%;
+    margin-bottom: 5rem;
+}
+
+.col{
+    width: 8px;
+    height: 30px;
+    display: inline-block;
+}
+
+.flex-span{
+    display: flex;
+}
+
+.Qualidade h2{
+    color: #a5a4a4;
+    font-size: 2rem;
+    padding-left: 8px;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+}
+
+.Qualidade p{
+    color: #817e7d;
+    font-weight: bold;
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+}
+
+/* MAIN FOUR */
+.mainFour{
+    background-color: #f7f7f7;
+    padding: 4rem 0;
+}
+
+.newsContainer{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+form{
+    border: 4px solid #2c70ff;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2c70ff;
+    height: 90px;
+}
+
+.newsletter h2{
+    color: #a5a4a4;
+    font-size: 2.6rem;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.newsletter p{
+    font-style: italic;
+    font-weight: bold;
+    color: #817e7d;
+    line-height: 1.5rem;
+}
+
+form input{
+    width: 60%;
+    height: 100%;
+    font-style: italic;
+    padding-left: 15px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: 'ABeeZee', sans-serif;
+    outline: none;
+}
+
+form button{
+    width: 40%;
+    text-align: center;
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+/* FOOTER */
+footer{
+    background-color: #2c70ff;
+}
+
+footer p{
+    margin: 0 15%;
+    color: #122ab2;
+    padding: 5rem 0;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+/*MEDIA QUERY*/
+@media screen and (max-width: 1024px){
+
+    /* NAV BAR */
+    .nav-li, main, .newsContainer, .Qualidade{
+        width: 80%;
+    }
+
+    .options{
+        width: 50%;
+    }
+
+    /* MAIN */
+    .sobre{
+        width: 50%;
+    }
+
+    .sobreImg1{
+        height: 70vh;
+    }
+
+    .sobreImg2{
+        height: 40vh;
+    }
+
+    /* MAIN2 */
+    .productos{
+        padding-left: 0;
+    }
+
+    /* MAIN TWO */
+    .mainTwo-container{
+        width: 90%;
+    }
+
+    .price1, .price2, .price3{
+        padding: 3rem 2rem;
+    }
+
+    /* MAIN FOUR */
+    form{
+        width: 60%;
+    }
+
+    form button{
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 912px){
+
+    .nav-li, main, .newsContainer, .Qualidade{
+        width: 90%;
+    }
+
+    .sobreImg1{
+        height: 60vh;
+    }
+
+    .sobreImg2{
+        height: 30vh;
+    }
+
+    /* DYNAMIC DIV */
+    .Qualidade h2{
+        font-size: 1.8rem;
+    }
+
+    /* FOOTER */
+    footer p{
+        margin: 0 10%;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    
+    /* NAV BAR */
+    .nav1{
+        display: none;
+    }
+    
+    .options{
+        display: none;
+    }
+
+    .menu-icon{
+        display: flex;
+        align-items: center;
+    }
+
+    /* MAIN */
+    .main1{
+        flex-wrap: wrap;
+    }
+
+    .sobre{
+        width: 100%;
+        
+    }
+    
+    .sobreImg1, .sobreImg2{
+        width: 49%;
+        height: auto;
+    }
+
+    /* MAIN TWO */
+    .price1, .price2, .price3{
+        padding: 1rem;
+    }
+    .comprar{
+        font-size: 1.4rem;
+        padding: 16px 0;
+    }
+
+    /* DYNAMIC DIV */
+    .dynamic-div{
+        width: 48.5%;
+    }
+
+    /* MAIN FOUR */
+    form button{
+        font-size: 1.6rem;
+    }
+
+    /* FOOTER */
+    footer p{
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 700px){
+    /* MAIN TWO */
+    .mainTwo-container{
+        width: 70%;
+        flex-wrap: wrap;
+    }
+    
+    .price-card{
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+
+    /* MAIN FOUR */
+    .newsContainer{
+        flex-wrap: wrap;
+    }
+
+    form{
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    /* FOOTER */
+    footer p{
+        font-size: 1.5rem;
+        padding: 3rem 0;
+    }
+}
+
+@media screen and (max-width: 700px){
+
+    /* SIDE BAR */
+    .side-bar{
+        width: 60%;
+    }
+
+    .novos{
+        font-size: 1.3rem;
+    }
+
+    /* MAIN2 */
+    .main2{
+        width: 80%;
+        margin: auto;
+    }
+    .main2_images{
+        flex-wrap: wrap;
+    }
+    
+    .purple, .pink, .blue{
+        width: 100%;
+        height: 70vh;
+        justify-content: flex-start;
+        margin-bottom: 1rem;
+    }
+
+    .purple img, .pink img, .blue img{
+        height: 50%;
+    }
+
+    /* MAIN TWO */
+    .mainTwo{
+        margin-top: 0;
+    }
+
+    /* DYNAMIC DIV */
+    .dynamic-div{
+        width: 80%;
+        margin-left: 2rem;
+        text-align: justify;
+    }
+
+    /* MAIN FOUR */
+    form button{
+        font-size: 1.2rem;
+    }
+
+    form input{
+        font-size: 1rem;
+    }
+
+    /* FOOTER */
+    footer p{
+        font-size: 1rem;
+        padding: 2rem 0;
+    }
+}
+
+@media screen and (max-width: 375px){
+   
+    /* SIDE BAR */
+    .side-bar{
+        width: 100%;
+    }
+
+    .menu{
+        font-size: 1.6rem;
+    }
+
+    .companyName{
+        font-size: 1.6rem;
+    }
+
+    .novos{
+        font-size: 1.2rem;
+    }
+
+    .Sobre, .productos{
+        font-size: 2.3rem;
+    }
+
+    .sobre p{
+        font-size: 1rem;
+    }
+
+    .color, .cobre, .price{
+        font-size: 2rem;
+    }
+    
+    .comprar{
+        font-size: 1.2rem;
+        padding: 12px 0;
+    }
+
+    /* DYNAMIC DIV */
+    .Qualidade p{
+        font-size: 1rem;
+    }
+
+    /* MAIN FOUR */
+    form button{
+        font-size: 1rem;
+    }
+
+    /* FOOTER */
+
+    .newsletter h2{
+        font-size: 2rem;
+    }
+    footer p{
+        font-size: 0.7rem;
+    }
+
+    .mainTwo{
+        padding: 2rem 0;
+    }
+}
